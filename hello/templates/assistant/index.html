@@ -1,13 +1,17 @@
 {% extends "base.html" %}
 {% load staticfiles %}
+{% block css %}
+  <link rel="stylesheet" type="text/css" href="{% static 'assistant/style.css'%}" />
+{% endblock %}
+{% block script %}
+  <script type="text/javascript" src="{% static 'assistant/script.js'%}"></script>
+{% endblock %}
 {% block content %}
 <div class="container">
   <div class="alert alert-info text-center" role="alert">
     Alert Hello Assistent
   </div>
   <hr>
-   <div class="alert alert-info text-center" role="alert">
-    Alert
-  </div>
+   <div class="assistant"></div>
 </div>
 {% endblock %}
