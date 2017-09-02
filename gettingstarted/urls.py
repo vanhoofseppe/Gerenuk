@@ -11,7 +11,7 @@ import hello.views
 
 urlpatterns = [
     url(r'^tmp/$', hello.views.index, name='index'),
-    url(r'^$', hello.views.assistent, name='assistent'),
+    url(r'^$', hello.views.assistent, name='assistant'),
     url(r'^db', hello.views.db, name='db'),
     url(r'^admin/', include(admin.site.urls)),
 ]

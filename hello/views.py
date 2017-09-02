@@ -9,7 +9,7 @@ def index(request):
     return render(request, 'index.html')
 
 def assistent(request):
-    return render(request, 'assistent/index.html')
+    return render(request, 'assistant/index.html')
 
 
 def db(request):
