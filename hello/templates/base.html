@@ -12,6 +12,8 @@
   <script type="text/javascript" src="{% static 'script/script.js'%}"></script>
   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}" />
   <!--END OWN SCRIPTS-->
+  {% block css %}{% endblock %}
+  {% block scripts %}{% endblock %}
 </head>
 <body>
 <nav class="navbar navbar-default navbar-static-top navbar-inverse">
