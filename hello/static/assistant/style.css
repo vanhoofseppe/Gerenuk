@@ -1,63 +1,82 @@
-.assistant-head {
-    background-color: #f2e6d7;
+.head {
     height: 500px;
     width: 500px;
     right: 50%;
     margin-right: -250px;
     position: absolute;
     border-radius: 50%;
-    background: linear-gradient(to bottom right, #f2e6d7, #928574);
 }
-.assistant-eye-iris {
+.eye-iris {
     right: 50%;
     margin-right: -25px;
     width: 50px;
     height: 50px;
-    background-color: cornflowerblue;
     border-radius: 50%;
     top: 10px;
     position: absolute;
 }
-.assistant-eye-pupil {
+.eye-pupil {
     right: 50%;
     margin-right: -10px;
-    width: 20px;
-    height: 20px;
-    background-color: black;
     border-radius: 50%;
     top: 16px;
     position: absolute;
 }
-.assistant-eye-left {
+.eye-left {
     left: 100px;
 }
-.assistant-eye-right {
+.eye-right {
     right: 100px;
 }
-.assistant-eye {
+.eye {
     position: absolute;
-    background-color: white;
-    width: 100px;
-    height: 70px;
     top: 120px;
     border: 1px solid grey;
     border-radius: 50%;
 }
+.mouth {
+    /*position: absolute;
+    width: 250px;
+    height: 5px;
+    top: 350px;
+    left: 50%;
+    margin-left: -125px;
+    background-color: black;*/
+}
 /*START EYE OPEN*/
 .eye-open {
     position: absolute;
-      background-color: black;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-    }
-    .eye-open > .eye-iris {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.eye-open > .eye-iris {
     position: absolute;
-      background-color: white;
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
-      left: 10px;
-      top: 25px;
-    }
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    left: 10px;
+    top: 25px;
+}
 /*END EYE OPEN*/
+/*START EYE SHUT*/
+.eye-shut {
+    position: absolute;
+    background-color: black;
+    width: 50px;
+    height: 5px;
+    margin-top: 25px;
+    border-radius: 50%;
+}/*
+.eye-shut > .eye-iris {
+    position: absolute;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    left: 10px;
+    top: 25px;
+}
+END EYE SHUT*/

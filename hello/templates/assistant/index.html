@@ -1,20 +1,35 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block css %}
-  <link rel="stylesheet" type="text/css" href="{% static 'assistant/style.css'%}" />
+<link rel="stylesheet" type="text/css" href="{% static 'assistant/style.css'%}"/>
 {% endblock %}
 {% block script %}
-  <script type="text/javascript" src="{% static 'assistant/script.js'%}"></script>
+<script type="text/javascript" src="{% static 'assistant/script.js'%}"></script>
 {% endblock %}
 {% block content %}
 <div class="container">
-  <div class="alert alert-info text-center" role="alert">
-    Alert Hello Assistent
-  </div>
-  <hr>
-   <div class="assistant-head">
-       <div class="assistant-eye assistant-eye-left eye-open"><div class="assistant-eye-iris"><div class="assistant-eye-pupil"></div></div></div>
-       <div class="assistant-eye assistant-eye-right"><div class="assistant-eye-iris"><div class="assistant-eye-pupil"></div></div></div>
-   </div>
+    <div class="alert alert-info text-center" role="alert">
+        Alert Hello Assistent
+    </div>
+    <hr>
+    <div class="head">
+        <div class="eye eye-left eye-open">
+            <div class="eye-iris">
+                <div class="eye-pupil"></div>
+            </div>
+        </div>
+        <div class="eye eye-right eye-shut">
+            <div class="eye-iris">
+                <div class="eye-pupil"></div>
+            </div>
+        </div>
+
+        <div class="mouth"></div>
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">Gebruik:</span>
+        <input type="text" class="form-control" placeholder="Commando: {{secret}}" aria-describedby="basic-addon1">
+
+    </div>
 </div>
 {% endblock %}
