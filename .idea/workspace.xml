@@ -2,37 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc7371fe-f2d1-41d3-b879-74bdffc0efee" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hello/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hello/migrations/0002_auto_20171007_2356.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hello/migrations/0003_setting.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/__init__.py" afterPath="$PROJECT_DIR$/resources/assistant/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/admin.py" afterPath="$PROJECT_DIR$/assistant/admin.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/migrations/__init__.py" afterPath="$PROJECT_DIR$/assistant/views/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/models/__init__.py" afterPath="$PROJECT_DIR$/assistant/models/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/models/greetings.py" afterPath="$PROJECT_DIR$/assistant/models/greetings.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/models/models.py" afterPath="$PROJECT_DIR$/assistant/models/models.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/models/settings.py" afterPath="$PROJECT_DIR$/assistant/models/settings.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/static/assistant/pics/lang-logo.png" afterPath="$PROJECT_DIR$/assistant/static/pics/lang-logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/static/assistant/script.js" afterPath="$PROJECT_DIR$/assistant/static/script/script.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/static/assistant/style.css" afterPath="$PROJECT_DIR$/assistant/static/assistant/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/static/css/style.css" afterPath="$PROJECT_DIR$/assistant/static/css/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/static/pics/lang-logo.png" afterPath="$PROJECT_DIR$/assistant/static/assistant/pics/lang-logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/static/script/script.js" afterPath="$PROJECT_DIR$/assistant/static/assistant/script.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/templates/assistant/index.html" afterPath="$PROJECT_DIR$/assistant/templates/assistant/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/templates/base.html" afterPath="$PROJECT_DIR$/assistant/templates/base.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/templates/db.html" afterPath="$PROJECT_DIR$/assistant/templates/db.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/templates/index.html" afterPath="$PROJECT_DIR$/assistant/templates/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/tests.py" afterPath="$PROJECT_DIR$/assistant/tests.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/views/__init__.py" afterPath="$PROJECT_DIR$/assistant/migrations/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/views/assistent.py" afterPath="$PROJECT_DIR$/assistant/views/assistant.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/views/db.py" afterPath="$PROJECT_DIR$/assistant/views/db.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/views/index.py" afterPath="$PROJECT_DIR$/assistant/views/index.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/views/views.py" afterPath="$PROJECT_DIR$/assistant/views/views.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/assistent/__init__.py" afterPath="$PROJECT_DIR$/assistant/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gettingstarted/settings.py" afterPath="$PROJECT_DIR$/gettingstarted/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gettingstarted/urls.py" afterPath="$PROJECT_DIR$/gettingstarted/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/facebook/graph.py" afterPath="$PROJECT_DIR$/resources/facebook/graph.py" />
     </list>
     <ignored path="django-vanhoofseppe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,8 +36,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assistant/models/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+            <state relative-caret-position="68">
+              <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -208,9 +178,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="1931" />
-    <option name="height" value="1056" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -514,7 +484,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2531983" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -524,7 +493,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24021739" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24021739" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39891306" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -969,8 +938,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assistant/models/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        <state relative-caret-position="68">
+          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
           <folding />
         </state>
       </provider>
