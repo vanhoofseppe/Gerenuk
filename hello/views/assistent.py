@@ -4,5 +4,4 @@ from resources.facebook.graph import read_message
 
 
 def assistent(request):
-    secret = read_message()
-    return render_to_response('assistant/index.html', {'secret': secret})
+    return render_to_response('assistant/index.html', {'message': read_message()})

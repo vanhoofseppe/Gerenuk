@@ -5,7 +5,7 @@ from hello.models.settings import Setting
 
 def read_message():
     app_id = '511249452542493'
-    app_secret = Setting.objects.get(key='app_secret').value
+    app_secret = Setting.objects.get(key='fb_secret').value
 
     #Franky:
     user_id = '449622021871979'
