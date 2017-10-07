@@ -2,7 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc7371fe-f2d1-41d3-b879-74bdffc0efee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hello/templates/assistant/index.html" afterPath="$PROJECT_DIR$/hello/templates/assistant/index.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hello/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hello/migrations/0002_auto_20171007_2356.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hello/migrations/0003_setting.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/__init__.py" afterPath="$PROJECT_DIR$/resources/assistant/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/admin.py" afterPath="$PROJECT_DIR$/assistant/admin.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/migrations/__init__.py" afterPath="$PROJECT_DIR$/assistant/views/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/models/__init__.py" afterPath="$PROJECT_DIR$/assistant/models/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/models/greetings.py" afterPath="$PROJECT_DIR$/assistant/models/greetings.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/models/models.py" afterPath="$PROJECT_DIR$/assistant/models/models.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/models/settings.py" afterPath="$PROJECT_DIR$/assistant/models/settings.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/static/assistant/pics/lang-logo.png" afterPath="$PROJECT_DIR$/assistant/static/pics/lang-logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/static/assistant/script.js" afterPath="$PROJECT_DIR$/assistant/static/script/script.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/static/assistant/style.css" afterPath="$PROJECT_DIR$/assistant/static/assistant/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/static/css/style.css" afterPath="$PROJECT_DIR$/assistant/static/css/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/static/pics/lang-logo.png" afterPath="$PROJECT_DIR$/assistant/static/assistant/pics/lang-logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/static/script/script.js" afterPath="$PROJECT_DIR$/assistant/static/assistant/script.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/templates/assistant/index.html" afterPath="$PROJECT_DIR$/assistant/templates/assistant/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/templates/base.html" afterPath="$PROJECT_DIR$/assistant/templates/base.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/templates/db.html" afterPath="$PROJECT_DIR$/assistant/templates/db.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/templates/index.html" afterPath="$PROJECT_DIR$/assistant/templates/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/tests.py" afterPath="$PROJECT_DIR$/assistant/tests.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/views/__init__.py" afterPath="$PROJECT_DIR$/assistant/migrations/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/views/assistent.py" afterPath="$PROJECT_DIR$/assistant/views/assistant.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/views/db.py" afterPath="$PROJECT_DIR$/assistant/views/db.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/views/index.py" afterPath="$PROJECT_DIR$/assistant/views/index.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hello/views/views.py" afterPath="$PROJECT_DIR$/assistant/views/views.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/assistent/__init__.py" afterPath="$PROJECT_DIR$/assistant/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gettingstarted/settings.py" afterPath="$PROJECT_DIR$/gettingstarted/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gettingstarted/urls.py" afterPath="$PROJECT_DIR$/gettingstarted/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/facebook/graph.py" afterPath="$PROJECT_DIR$/resources/facebook/graph.py" />
     </list>
     <ignored path="django-vanhoofseppe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,40 +51,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="db.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hello/views/db.py">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gettingstarted/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hello/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+            <state relative-caret-position="102">
+              <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hello/models/settings.py">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assistant/models/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+            <state relative-caret-position="51">
+              <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hello/templates/assistant/index.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assistant/templates/assistant/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="464">
               <caret line="30" column="80" lean-forward="false" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
@@ -66,22 +86,32 @@
       <file leaf-file-name="graph.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/facebook/graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="51" lean-forward="false" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+            <state relative-caret-position="34">
+              <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="assistant.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assistant/views/assistant.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#0#47#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="assistent.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hello/views/assistent.py">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gettingstarted/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+            <state relative-caret-position="187">
+              <caret line="107" column="17" lean-forward="true" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
               <folding>
-                <element signature="e#0#47#0" expanded="true" />
+                <element signature="e#333#342#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,7 +148,7 @@
         </entry>
       </file>
       <file leaf-file-name="greetings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hello/models/greetings.py">
+        <entry file="file://$PROJECT_DIR$/assistant/models/greetings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
@@ -141,6 +171,7 @@
     <findStrings>
       <find>assistant-</find>
       <find>DATABASE_URL</find>
+      <find>assistent</find>
       <find>Gree</find>
     </findStrings>
   </component>
@@ -171,6 +202,8 @@
         <option value="$PROJECT_DIR$/resources/facebook/graph.py" />
         <option value="$PROJECT_DIR$/hello/views/assistent.py" />
         <option value="$PROJECT_DIR$/hello/templates/assistant/index.html" />
+        <option value="$PROJECT_DIR$/gettingstarted/settings.py" />
+        <option value="$PROJECT_DIR$/assistant/views/assistant.py" />
       </list>
     </option>
   </component>
@@ -204,72 +237,29 @@
             <path>
               <item name="django-Gerenuk" type="b2602c69:ProjectViewProjectNode" />
               <item name="django-Gerenuk" type="462c0819:PsiDirectoryNode" />
-              <item name="gettingstarted" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django-Gerenuk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django-Gerenuk" type="462c0819:PsiDirectoryNode" />
-              <item name="gettingstarted" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django-Gerenuk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django-Gerenuk" type="462c0819:PsiDirectoryNode" />
-              <item name="hello" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django-Gerenuk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django-Gerenuk" type="462c0819:PsiDirectoryNode" />
-              <item name="hello" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django-Gerenuk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django-Gerenuk" type="462c0819:PsiDirectoryNode" />
-              <item name="hello" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django-Gerenuk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django-Gerenuk" type="462c0819:PsiDirectoryNode" />
-              <item name="hello" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django-Gerenuk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django-Gerenuk" type="462c0819:PsiDirectoryNode" />
-              <item name="hello" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django-Gerenuk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django-Gerenuk" type="462c0819:PsiDirectoryNode" />
-              <item name="hello" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="assistant" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="django-Gerenuk" type="b2602c69:ProjectViewProjectNode" />
               <item name="django-Gerenuk" type="462c0819:PsiDirectoryNode" />
-              <item name="hello" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="assistant" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django-Gerenuk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django-Gerenuk" type="462c0819:PsiDirectoryNode" />
+              <item name="assistant" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django-Gerenuk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django-Gerenuk" type="462c0819:PsiDirectoryNode" />
+              <item name="gettingstarted" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="django-Gerenuk" type="b2602c69:ProjectViewProjectNode" />
               <item name="django-Gerenuk" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django-Gerenuk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django-Gerenuk" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="assistent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django-Gerenuk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django-Gerenuk" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="facebook" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -529,7 +519,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2531983" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -567,14 +557,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hello/static/script/script.js">
+    <entry file="file://$PROJECT_DIR$/assistant/static/script/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/static/css/style.css">
+    <entry file="file://$PROJECT_DIR$/assistant/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
@@ -582,7 +572,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/static/assistant/style.css">
+    <entry file="file://$PROJECT_DIR$/assistant/static/assistant/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
@@ -600,7 +590,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/views/views.py">
+    <entry file="file://$PROJECT_DIR$/assistant/views/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
@@ -610,14 +600,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/assistant/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/models/models.py">
+    <entry file="file://$PROJECT_DIR$/assistant/models/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -633,7 +624,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/assistant/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="12" selection-end-column="78" />
@@ -641,7 +632,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/templates/assistant/index.html">
+    <entry file="file://$PROJECT_DIR$/assistant/templates/assistant/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="131" lean-forward="false" selection-start-line="16" selection-start-column="131" selection-end-line="16" selection-end-column="131" />
@@ -649,7 +640,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/static/assistant/style.css">
+    <entry file="file://$PROJECT_DIR$/assistant/static/assistant/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -657,14 +648,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/static/script/script.js">
+    <entry file="file://$PROJECT_DIR$/assistant/static/script/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/static/css/style.css">
+    <entry file="file://$PROJECT_DIR$/assistant/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
@@ -744,17 +735,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/static/script/script.js">
+    <entry file="file://$PROJECT_DIR$/assistant/static/script/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/assistant/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -773,7 +765,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/assistant/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="12" selection-end-column="78" />
@@ -781,7 +773,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/static/css/style.css">
+    <entry file="file://$PROJECT_DIR$/assistant/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
@@ -789,7 +781,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/static/assistant/style.css">
+    <entry file="file://$PROJECT_DIR$/assistant/static/assistant/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
           <caret line="69" column="21" lean-forward="false" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
@@ -821,7 +813,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/views/index.py">
+    <entry file="file://$PROJECT_DIR$/assistant/views/index.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
@@ -829,7 +821,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/models/__init__.py">
+    <entry file="file://$PROJECT_DIR$/assistant/models/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -837,7 +829,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/models/models.py">
+    <entry file="file://$PROJECT_DIR$/assistant/models/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -853,7 +845,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/views/views.py">
+    <entry file="file://$PROJECT_DIR$/assistant/views/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
@@ -871,26 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gettingstarted/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gettingstarted/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-          <folding>
-            <element signature="e#333#342#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -899,7 +871,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/views/db.py">
+    <entry file="file://$PROJECT_DIR$/assistant/views/db.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
@@ -907,7 +879,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/admin.py">
+    <entry file="file://$PROJECT_DIR$/assistant/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
@@ -917,15 +889,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/models/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello/models/greetings.py">
+    <entry file="file://$PROJECT_DIR$/assistant/models/greetings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
@@ -957,30 +921,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/views/assistent.py">
+    <entry file="file://$PROJECT_DIR$/assistant/templates/assistant/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="30" column="80" lean-forward="false" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gettingstarted/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assistant/views/assistant.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/facebook/graph.py">
+    <entry file="file://$PROJECT_DIR$/gettingstarted/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="51" lean-forward="false" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+        <state relative-caret-position="187">
+          <caret line="107" column="17" lean-forward="true" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#333#342#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/templates/assistant/index.html">
+    <entry file="file://$PROJECT_DIR$/resources/facebook/graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="30" column="80" lean-forward="false" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
+        <state relative-caret-position="34">
+          <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assistant/models/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
           <folding />
         </state>
       </provider>

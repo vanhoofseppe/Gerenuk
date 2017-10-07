@@ -1,6 +1,6 @@
 import requests
 
-from hello.models.settings import Setting
+from assistant.models.settings import Setting
 
 
 def read_message():
