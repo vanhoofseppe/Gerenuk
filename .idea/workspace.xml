@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc7371fe-f2d1-41d3-b879-74bdffc0efee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hello/views/assistent.py" afterPath="$PROJECT_DIR$/hello/views/assistent.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/facebook/graph.py" afterPath="$PROJECT_DIR$/resources/facebook/graph.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hello/templates/assistant/index.html" afterPath="$PROJECT_DIR$/hello/templates/assistant/index.html" />
     </list>
     <ignored path="django-vanhoofseppe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hello/templates/assistant/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="30" column="71" lean-forward="false" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
+            <state relative-caret-position="464">
+              <caret line="30" column="80" lean-forward="false" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -77,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="assistent.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="assistent.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hello/views/assistent.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -170,9 +168,9 @@
         <option value="$PROJECT_DIR$/hello/views/db.py" />
         <option value="$PROJECT_DIR$/hello/models/settings.py" />
         <option value="$PROJECT_DIR$/hello/admin.py" />
-        <option value="$PROJECT_DIR$/hello/templates/assistant/index.html" />
         <option value="$PROJECT_DIR$/resources/facebook/graph.py" />
         <option value="$PROJECT_DIR$/hello/views/assistent.py" />
+        <option value="$PROJECT_DIR$/hello/templates/assistant/index.html" />
       </list>
     </option>
   </component>
@@ -927,14 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/templates/assistant/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="30" column="71" lean-forward="false" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hello/models/greetings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -967,6 +957,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hello/views/assistent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/facebook/graph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -977,13 +977,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/views/assistent.py">
+    <entry file="file://$PROJECT_DIR$/hello/templates/assistant/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="464">
+          <caret line="30" column="80" lean-forward="false" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
+          <folding />
         </state>
       </provider>
     </entry>
