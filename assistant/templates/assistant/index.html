@@ -5,11 +5,16 @@
 {% endblock %}
 {% block script %}
 <script type="text/javascript" src="{% static 'assistant/script.js'%}"></script>
+<script>
+    $(document).ready(function(){
+        window.assistant.start("assistant/index.html");
+    });
+</script>
 {% endblock %}
 {% block content %}
 <div class="container">
     <div class="alert alert-info text-center" role="alert">
-        Alert Hello Assistent
+        {{message}}
     </div>
     <hr>
     <div class="head">
@@ -18,7 +23,7 @@
                 <div class="eye-pupil"></div>
             </div>
         </div>
-        <div class="eye eye-right eye-shut">
+        <div class="eye eye-right eye-open">
             <div class="eye-iris">
                 <div class="eye-pupil"></div>
             </div>
@@ -28,8 +33,8 @@
     </div>
     <div class="input-group">
         <span class="input-group-addon" id="basic-addon1">Gebruik:</span>
-        <input type="text" class="form-control" placeholder="Commando: {{message}}" aria-describedby="basic-addon1">
-
+        <input type="text" class="form-control" placeholder="Commando" aria-describedby="basic-addon1">
     </div>
+    <hr>
 </div>
 {% endblock %}

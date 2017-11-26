@@ -9,7 +9,7 @@ from .models.facebook import Facebook, FacebookInformation
 @admin.register(Greeting)
 class GreetingAdmin(admin.ModelAdmin):
     fields = ('when',)
-    list_display = fields
+    list_display = ('when',)
     pass
 
 
