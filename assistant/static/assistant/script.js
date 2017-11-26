@@ -6,216 +6,229 @@ $(document).ready(function(){
         },
         start_movement: function(){
             log("start_movement");
-            var random_time = Math.floor(Math.random() * 6000) + 1000;
             setTimeout(function(){
-                var random_movement = assistant.movements[Math.floor(Math.random()*assistant.movements.length)];
-                if( assistant.movement(random_movement) ){ // finished?
+                var list = assistant.movements.list;
+                var random_movement = list[Math.floor(Math.random()*list.length)];
+                log('random_movement: ' + random_movement);
+                time = assistant.movements.random_time();
+                if( assistant.movements.random_movement[random_movement]() && assistant.movements.auto_movement_allowed ){
+                    // finished && allowed?
                     assistant.start_movement();
                 }
-            }, random_time);
+            }, Math.floor(Math.random() * 4500) + 500);
         },
-        movements: [1, 1, 1, 2, 3, 6, 7, 8, 9, 10, 11],
-        movement: function(movement) {
-            var random_time = Math.floor(Math.random() * 100) + 1000;
-            switch(movement){
-                case 1:
-                    assistant.movement_knipperen(random_time);
-                    break;
-                case 2:
-                    assistant.movement_left_right(random_time);
-                    break;
-                case 3:
-                    assistant.movement_right_left(random_time);
-                    break;
-                case 4:
-                    assistant.movement_knipoog_right(random_time);
-                    break;
-                case 5:
-                    assistant.movement_knipoog_left(random_time);
-                    break;
-                case 6:
-                    assistant.movement_right(random_time);
-                    break;
-                case 7:
-                    assistant.movement_left(random_time);
-                    break;
-                case 8:
-                    assistant.movement_right_top(random_time);
-                    break;
-                case 9:
-                    assistant.movement_left_top(random_time);
-                    break;
-                case 10:
-                    assistant.movement_right_bottom(random_time);
-                    break;
-                case 11:
-                    assistant.movement_left_bottom(random_time);
-                    break;
-                default:
-                    log("movement '" + movement + "' not configured.");
-                    break;
-            };
-            return true;
-        },
-        movement_range: 20,
-        movement_knipperen: function(){
-            log("knipperen");
-            setTimeout(function(){
-                log("dicht");
-                $(".eye").removeClass("eye-open");
-                $(".eye").addClass("eye-shut");
-            }, 10);
-            setTimeout(function(){
-                log("open");
-                $(".eye").removeClass("eye-shut");
-                $(".eye").addClass("eye-open");
-            }, 300);
-        },
-        movement_left_right: function(time){
+        movements: {
+            list: [1, 1, 1, 2, 3, 4, 5, 8, 9, 10, 11],
+            auto_movement_allowed: true,
+            random_time: function(){ return Math.floor(Math.random() * 3000) + 150 },
+            range: 20,
+            eye: {
+                'knipperen': function(time=assistant.movements.random_time()){
+                    log("knipperen");
+                    setTimeout(function(){
+                        log("dicht");
+                        $(".eye").removeClass("eye-open");
+                        $(".eye").addClass("eye-shut");
+                    }, 10);
+                    setTimeout(function(){
+                        log("open");
+                        $(".eye").removeClass("eye-shut");
+                        $(".eye").addClass("eye-open");
+                    }, 300);
+                },
+                'left_right': function(time=assistant.movements.random_time()){
             log("left-right");
             $( ".eye-iris" ).animate({
-                left: "+="+assistant.movement_range+"px",
+                left: "+="+assistant.movements.range+"px",
             }, 250, function() { /* Animation complete. */  });
             $( ".eye-iris" ).animate({
                 left: "-=1px",
             }, time, function() { /* Animation complete. */  });
             $( ".eye-iris" ).animate({
-                left: "-="+(assistant.movement_range*2-1)+"px",
+                left: "-="+(assistant.movements.range*2-1)+"px",
             }, 250, function() { /* Animation complete. */  });
             $( ".eye-iris" ).animate({
                 left: "+=1px",
             }, time, function() { /* Animation complete. */  });
             $( ".eye-iris" ).animate({
-                left: "+="+(assistant.movement_range-1)+"px",
+                left: "+="+(assistant.movements.range-1)+"px",
             }, 250, function() { /* Animation complete. */  });
         },
-        movement_right: function(time){
-            log("eye-right");
-            $( ".eye-iris" ).animate({
-                left: "+="+assistant.movement_range+"px",
-            }, 250, function() { /* Animation complete. */  });
-            $( ".eye-iris" ).animate({
-                left: "-=1px",
-            }, time, function() { /* Animation complete. */  });
-            $( ".eye-iris" ).animate({
-                left: "-="+(assistant.movement_range-1)+"px",
-            }, 250, function() { /* Animation complete. */  });
-        },
-        movement_left: function(time){
-            log("eye-left");
-            $( ".eye-iris" ).animate({
-                left: "-="+assistant.movement_range+"px",
-            }, 250, function() { /* Animation complete. */  });
-            $( ".eye-iris" ).animate({
-                left: "+=1px",
-            }, time, function() { /* Animation complete. */  });
-            $( ".eye-iris" ).animate({
-                left: "+="+(assistant.movement_range-1)+"px",
-            }, 250, function() { /* Animation complete. */  });
-        },
-        movement_right_left: function(time){
-            log("right-left");
-            $( ".eye-iris" ).animate({
-                left: "-="+assistant.movement_range+"px",
-            }, 250, function() { /* Animation complete. */  });
-            $( ".eye-iris" ).animate({
-                left: "+=1px",
-            }, time, function() { /* Animation complete. */  });
-            $( ".eye-iris" ).animate({
-                left: "+="+(assistant.movement_range*2-1)+"px",
-            }, 250, function() { /* Animation complete. */  });
-            $( ".eye-iris" ).animate({
-                left: "-=1px",
-            }, time, function() { /* Animation complete. */  });
-            $( ".eye-iris" ).animate({
-                left: "-="+(assistant.movement_range-1)+"px",
-            }, 250, function() { /* Animation complete. */  });
-        },
-        movement_knipoog_right: function(){
-            log("knipoog-rechts");
-            setTimeout(function(){
-                log("dicht");
-                $(".eye-right").removeClass("eye-open");
-                $(".eye-right").addClass("eye-shut");
-            }, 10);
-            setTimeout(function(){
-                log("open");
-                $(".eye-right").removeClass("eye-shut");
-                $(".eye-right").addClass("eye-open");
-            }, 300);
-        },
-        movement_knipoog_left: function(){
-            log("knipoog-links");
-            setTimeout(function(){
-                log("dicht");
-                $(".eye-left").removeClass("eye-open");
-                $(".eye-left").addClass("eye-shut");
-            }, 10);
-            setTimeout(function(){
-                log("open");
-                $(".eye-left").removeClass("eye-shut");
-                $(".eye-left").addClass("eye-open");
-            }, 300);
-        },
-        movement_left_top: function(time){
-            log("eye-left-top");
-            $( ".eye-iris" ).animate({
-                left: "-="+(assistant.movement_range-1)+"px",
-                top: "-="+(assistant.movement_range-1)+"px",
-            }, 250, function() { /* Animation complete. */  });
-            $( ".eye-iris" ).animate({
-                left: "+=1px",
-                top: "+=1px",
-            }, time, function() { /* Animation complete. */  });
-            $( ".eye-iris" ).animate({
-                left: "+="+(assistant.movement_range-2)+"px",
-                top: "+="+(assistant.movement_range-2)+"px",
-            }, 250, function() { /* Animation complete. */  });
-        },
-        movement_right_top: function(time){
-            log("eye-right-top");
-            $( ".eye-iris" ).animate({
-                left: "+="+(assistant.movement_range-1)+"px",
-                top: "-="+(assistant.movement_range-1)+"px",
-            }, 250, function() { /* Animation complete. */  });
-            $( ".eye-iris" ).animate({
-                left: "-=1px",
-                top: "+=1px",
-            }, time, function() { /* Animation complete. */  });
-            $( ".eye-iris" ).animate({
-                left: "-="+(assistant.movement_range-2)+"px",
-                top: "+="+(assistant.movement_range-2)+"px",
-            }, 250, function() { /* Animation complete. */  });
-        },
-        movement_left_bottom: function(time){
-            log("eye-left-bottom");
-            $( ".eye-iris" ).animate({
-                left: "-="+(assistant.movement_range-1)+"px",
-                top: "+="+(assistant.movement_range-1)+"px",
-            }, 250, function() { /* Animation complete. */  });
-            $( ".eye-iris" ).animate({
-                left: "+=1px",
-                top: "-=1px",
-            }, time, function() { /* Animation complete. */  });
-            $( ".eye-iris" ).animate({
-                left: "+="+(assistant.movement_range-2)+"px",
-                top: "-="+(assistant.movement_range-2)+"px",
-            }, 250, function() { /* Animation complete. */  });
-        },
-        movement_right_bottom: function(time){
-            log("eye-right-bottom");
-            $( ".eye-iris" ).animate({
-                left: "+="+(assistant.movement_range-1)+"px",
-                top: "+="+(assistant.movement_range-1)+"px",
-            }, 250, function() { /* Animation complete. */  });
-            $( ".eye-iris" ).animate({
-                left: "-=1px",
-                top: "-=1px",
-            }, time, function() { /* Animation complete. */  });
-            $( ".eye-iris" ).animate({
-                left: "-="+(assistant.movement_range-2)+"px",
-                top: "-="+(assistant.movement_range-2)+"px",
-            }, 250, function() { /* Animation complete. */  });
+                'right': function(time=assistant.movements.random_time()){
+                    log("eye-right");
+                    $( ".eye-iris" ).animate({
+                        left: "+="+assistant.movements.range+"px",
+                    }, 250, function() { /* Animation complete. */  });
+                    $( ".eye-iris" ).animate({
+                        left: "-=1px",
+                    }, time, function() { /* Animation complete. */  });
+                    $( ".eye-iris" ).animate({
+                        left: "-="+(assistant.movements.range-1)+"px",
+                    }, 250, function() { /* Animation complete. */  });
+                },
+                'left': function(time=assistant.movements.random_time()){
+                    log("eye-left");
+                    $( ".eye-iris" ).animate({
+                        left: "-="+assistant.movements.range+"px",
+                    }, 250, function() { /* Animation complete. */  });
+                    $( ".eye-iris" ).animate({
+                        left: "+=1px",
+                    }, time, function() { /* Animation complete. */  });
+                    $( ".eye-iris" ).animate({
+                        left: "+="+(assistant.movements.range-1)+"px",
+                    }, 250, function() { /* Animation complete. */  });
+                },
+                'right_left': function(time=assistant.movements.random_time()){
+                    log("right-left");
+                    $( ".eye-iris" ).animate({
+                        left: "-="+assistant.movements.range+"px",
+                    }, 250, function() { /* Animation complete. */  });
+                    $( ".eye-iris" ).animate({
+                        left: "+=1px",
+                    }, time, function() { /* Animation complete. */  });
+                    $( ".eye-iris" ).animate({
+                        left: "+="+(assistant.movements.range*2-1)+"px",
+                    }, 250, function() { /* Animation complete. */  });
+                    $( ".eye-iris" ).animate({
+                        left: "-=1px",
+                    }, time, function() { /* Animation complete. */  });
+                    $( ".eye-iris" ).animate({
+                        left: "-="+(assistant.movements.range-1)+"px",
+                    }, 250, function() { /* Animation complete. */  });
+                },
+                'knipoog_right': function(time=assistant.movements.random_time()){
+                    log("knipoog-rechts");
+                    setTimeout(function(){
+                        log("dicht");
+                        $(".eye-right").removeClass("eye-open");
+                        $(".eye-right").addClass("eye-shut");
+                    }, 10);
+                    setTimeout(function(){
+                        log("open");
+                        $(".eye-right").removeClass("eye-shut");
+                        $(".eye-right").addClass("eye-open");
+                    }, 300);
+                },
+                'knipoog_left': function(time=assistant.movements.random_time()){
+                    log("knipoog-links");
+                    setTimeout(function(){
+                        log("dicht");
+                        $(".eye-left").removeClass("eye-open");
+                        $(".eye-left").addClass("eye-shut");
+                    }, 10);
+                    setTimeout(function(){
+                        log("open");
+                        $(".eye-left").removeClass("eye-shut");
+                        $(".eye-left").addClass("eye-open");
+                    }, 300);
+                },
+                'left_top': function(time=assistant.movements.random_time()){
+                    log("eye-left-top");
+                    $( ".eye-iris" ).animate({
+                        left: "-="+(assistant.movements.range-1)+"px",
+                        top: "-="+(assistant.movements.range-1)+"px",
+                    }, 250, function() { /* Animation complete. */  });
+                    $( ".eye-iris" ).animate({
+                        left: "+=1px",
+                        top: "+=1px",
+                    }, time, function() { /* Animation complete. */  });
+                    $( ".eye-iris" ).animate({
+                        left: "+="+(assistant.movements.range-2)+"px",
+                        top: "+="+(assistant.movements.range-2)+"px",
+                    }, 250, function() { /* Animation complete. */  });
+                },
+                'right_top': function(time=assistant.movements.random_time()){
+                    log("eye-right-top");
+                    $( ".eye-iris" ).animate({
+                        left: "+="+(assistant.movements.range-1)+"px",
+                        top: "-="+(assistant.movements.range-1)+"px",
+                    }, 250, function() { /* Animation complete. */  });
+                    $( ".eye-iris" ).animate({
+                        left: "-=1px",
+                        top: "+=1px",
+                    }, time, function() { /* Animation complete. */  });
+                    $( ".eye-iris" ).animate({
+                        left: "-="+(assistant.movements.range-2)+"px",
+                        top: "+="+(assistant.movements.range-2)+"px",
+                    }, 250, function() { /* Animation complete. */  });
+                },
+                'left_bottom': function(time=assistant.movements.random_time()){
+                    log("eye-left-bottom");
+                    $( ".eye-iris" ).animate({
+                        left: "-="+(assistant.movements.range-1)+"px",
+                        top: "+="+(assistant.movements.range-1)+"px",
+                    }, 250, function() { /* Animation complete. */  });
+                    $( ".eye-iris" ).animate({
+                        left: "+=1px",
+                        top: "-=1px",
+                    }, time, function() { /* Animation complete. */  });
+                    $( ".eye-iris" ).animate({
+                        left: "+="+(assistant.movements.range-2)+"px",
+                        top: "-="+(assistant.movements.range-2)+"px",
+                    }, 250, function() { /* Animation complete. */  });
+                },
+                'right_bottom': function(time=assistant.movements.random_time()){
+                    log("eye-right-bottom");
+                    $( ".eye-iris" ).animate({
+                        left: "+="+(assistant.movements.range-1)+"px",
+                        top: "+="+(assistant.movements.range-1)+"px",
+                    }, 250, function() { /* Animation complete. */  });
+                    $( ".eye-iris" ).animate({
+                        left: "-=1px",
+                        top: "-=1px",
+                    }, time, function() { /* Animation complete. */  });
+                    $( ".eye-iris" ).animate({
+                        left: "-="+(assistant.movements.range-2)+"px",
+                        top: "-="+(assistant.movements.range-2)+"px",
+                    }, 250, function() { /* Animation complete. */  });
+                },
+            },
+            random_movement: {
+                1: function(){
+                    assistant.movements.eye['knipperen']();
+                    return true;
+                },
+                2: function(){
+                    assistant.movements.eye['left_right']();
+                    return true;
+                },
+                3: function(){
+                    assistant.movements.eye['right']();
+                    return true;
+                },
+                4: function(){
+                    assistant.movements.eye['left']();
+                    return true;
+                },
+                5: function(){
+                    assistant.movements.eye['right_left']();
+                    return true;
+                },
+                6: function(){
+                    assistant.movements.eye['knipoog_right']();
+                    return true;
+                },
+                7: function(){
+                    assistant.movements.eye['knipoog_left']();
+                    return true;
+                },
+                8: function(){
+                    assistant.movements.eye['left_top']();
+                    return true;
+                },
+                9: function(){
+                    assistant.movements.eye['right_top']();
+                    return true;
+                },
+                10: function(){
+                    assistant.movements.eye['left_bottom']();
+                    return true;
+                },
+                11: function(){
+                    assistant.movements.eye['right_bottom']();
+                    return true;
+                },
+            }
         },
     };
 
