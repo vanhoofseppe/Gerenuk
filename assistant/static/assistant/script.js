@@ -14,9 +14,9 @@ $(document).ready(function(){
                 }
             }, random_time);
         },
-        movements: [1, 2, 3, 6, 7, 8, 9, 10, 11],
+        movements: [1, 1, 1, 2, 3, 6, 7, 8, 9, 10, 11],
         movement: function(movement) {
-            var random_time = Math.floor(Math.random() * 200) + 1000;
+            var random_time = Math.floor(Math.random() * 100) + 1000;
             switch(movement){
                 case 1:
                     assistant.movement_knipperen(random_time);
